@@ -1,0 +1,16 @@
+f = open('24-210__2pt9q.txt')
+s = f.readline()
+"""s = s.replace('CABC', 'CAB_ABC').replace('CBAC', 'CBA_BAC')
+s = s.replace('ABCCAB', 'ABC CAB')
+s = s.replace('ABCCBA', 'ABC CBA')
+s = s.replace('BACCAB', 'BAC CAB')
+s = s.replace('BACCBA', 'BAC CBA')
+s = s.replace('CABBAC', 'CAB BAC')
+s = s.replace('CBAABC', 'CBA ABC')
+
+s = s.replace('ABCAB', 'ABCCAB')
+s = s.replace('ABCBA', 'ABCCBA')
+s = s.replace('BACAB', 'BACCAB')
+s = s.replace('BACBA', 'BACCBA')
+s = s.replace('CABAC', 'CABBAC')
+s = s.replace('CBABC', 'CBAABC')"""

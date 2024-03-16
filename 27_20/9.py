@@ -1,27 +1,29 @@
-f = open('12_B__1vjyg.txt')
-#f = open('12_A__1vjyf.txt')
-n = int(f.readline())
+
+f = open('27B__31x77.txt')
+#f = open('5__t9il.txt')
 a = []
-k, d = 4, 14
-p = [0]*15
-ost = [1, 2, 7, 14]
+n = int(f.readline())
+k = 3
+d = 26
 c = 0
+p = [0]*27
+ost = [1, 2, 13, 26]
 for i in range(k):
     a.append(int(f.readline()))
+
 for i in range(n-k):
     x = a.pop(0)
-    ost1 = ost[::-1]
-    for o in ost1:
+    for o in ost:
         if x % o == 0:
             p[o] += 1
     y = int(f.readline())
     a += [y]
-    if y % 14 == 0:
+    if y % 26 == 0:
         c += p[1]
-    elif y % 7 == 0:
+    elif y % 13 == 0:
         c += p[2]
     elif y % 2 == 0:
-        c += p[7]
+        c += p[13]
     else:
-        c += p[14]
+        c += p[26]
 print(c)

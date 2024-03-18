@@ -1,14 +1,11 @@
-f = open('9B__2uhr8.txt')
-#f = open('9A__2uhr6.txt')
-k = 113
-m = [0]*k
-n = int(f.readline())
-for i in range(n):
-    pa = list(map(int, f.readline().split()))
-    m1 = [10**100]*113
-    for t in range(k):
-        for p in pa:
-            if m[t] + p < m1[(m[t] + p) % k]:
-                m1[(m[t] + p) % k] = m[t] + p
-    m = m1.copy()
-print(min(m[1:]))
+for a in range(500):
+    fl = 0
+    for x in range(1, 500):
+        for y in range(1, 500):
+            if (((y*y <= a) <= (y <= 10)) and ((x <= 9) <= (x*x < a))) == False:
+                fl = 1
+                break
+            if fl == 1:
+                break
+    if fl == 0:
+        print(a)

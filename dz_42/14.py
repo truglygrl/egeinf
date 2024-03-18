@@ -1,4 +1,4 @@
-f = open('26_6__1vn9e.txt')
+f = open('26__1w6n4.txt')
 k = int(f.readline())
 n = int(f.readline())
 a = sorted(list(map(int, i.split())) for i in f)
@@ -16,5 +16,5 @@ for j in range(k):
     for i in l:
         a.pop(i)
     c += len(t)
-    print(j + 1, t)
+    print(j+1, t)
 print(c, mx)

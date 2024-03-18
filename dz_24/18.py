@@ -1,0 +1,5 @@
+f = open('9__1ncxm.txt')
+s = f.readline()
+s = s.replace('BCCDA', '*****', 2)
+print(s.find('BCCDA'))
+print(s[9371:9371+10])

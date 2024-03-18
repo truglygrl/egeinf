@@ -1,15 +1,15 @@
-f = open('10B__2uht2.txt')
-#f = open('10A__2uht1.txt')
-k = 18
-m = [0]*k
-n = int(f.readline())
-for i in range(n):
-    ns = list(map(int, f.readline().split()))
-    m1 = [0]*k
-    for t in range(k):
-        for p in ns:
-            if m[t] + p > m1[(m[t] + p) % k]:
-                m1[(m[t] + p) % k] = m[t] + p
-
-    m = m1.copy()
-print(max(m[1:]))
+def f(a, b, c):
+    if a <= c <= b:
+        return True
+    return False
+l = []
+for a1 in range(1, 500-1):
+    for a2 in range(a1+1, 500):
+        fl = 0
+        for i in range(1, 1000):
+            if ((f(a1, a2, i) <= f(15, 39, i)) or f(44, 57, i)) == False:
+                fl = 1
+                break
+        if fl == 0:
+            l.append(a2-a1)
+print(l)

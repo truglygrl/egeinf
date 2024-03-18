@@ -1,0 +1,7 @@
+f = open('10__1dn7z.txt')
+s = f.readline()
+s = s.replace('BEC', '***')
+#print(s)
+print(s.find('************'))
+s = s.replace('************', 'BECBECBECBEC')
+print(s[77103:77105+15])

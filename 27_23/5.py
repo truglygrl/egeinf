@@ -13,6 +13,8 @@ for i in range(n):
         nt[s % k] = i
     if s % k == 0:
         ms = s
+        if ms == 1708223923:
+            print(i+1)
     elif ((s - mt[s % k]) > ms) and (mt[s % k] < 10**20):
         ms = s - mt[s % k]
     if (s - mt[s % k]) == 1708223923:

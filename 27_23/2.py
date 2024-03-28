@@ -1,5 +1,5 @@
 f = open('2_B__1vuvc.txt')
-#f = open('2_A__1vuvb.txt')#17
+f = open('2_A__1vuvb.txt')#17
 k = 74
 n = int(f.readline())
 a = [int(i) for i in f]
@@ -15,6 +15,6 @@ for i in range(n):
         ms = s
     if ((s - mt[s % k]) > ms) and (mt[s % k] < 100000000000000000000):
         ms = s - mt[s % k]
-    if 1096589720 == s - mt[s % k]:
+    if 5392676 == s - mt[s % k]:
         print('asd', i - nt[s % k])
 print(ms)

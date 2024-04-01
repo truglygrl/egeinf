@@ -17,4 +17,4 @@ for i in range(n):
         ms = s - mt[s % k]
     if s - mt[s % k] == 1096591311:
         print('HFEFEFEJ', i - nt[s % k])
-print(ms, ms % k)
+print(ms, ms % k

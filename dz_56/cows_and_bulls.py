@@ -1,5 +1,4 @@
-a = int(input()) #a - петя, b - вася
-b = int(input())
+a, b = map(int, input().split())
 a = str(a)
 b = str(b)
 

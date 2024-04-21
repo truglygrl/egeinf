@@ -8,13 +8,15 @@ ans2 = 0
 print(k, n)
 for client in clients:
     ok = False
+    print('client', client)
     for i in range(k):
         if client[0] >= table[i]:
+            print('table[i]', table[i])
+            print('client[0]', client[0])
             ok = True
             table[i] = client[1] + 22
             ans1 += 1
             ans2 = i + 1
-            print(table)
             break
 
     if not ok:

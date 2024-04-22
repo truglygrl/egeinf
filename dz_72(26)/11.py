@@ -11,7 +11,7 @@ for i in range(n):
         a[i] = [int(n1), int(n2), '1']
     if tp == 'C':
         a[i] = [int(n1), int(n2), '2']
-a = sorted(a)
+a.sort(key=lambda x: (x[0], x[1]))
 k = sum(p)
 cam = [-1]*k #[15, 19, 13]
 win = ta = 0

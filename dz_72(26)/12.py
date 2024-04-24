@@ -1,26 +1,23 @@
 f = open('26_5__3cjxc.txt')
 n = int(f.readline())#pep
 k = int(f.readline())#copms
-a = sorted(list(map(int, i.split())) for i in f)
+a = []
+t = [-1]*k
 to = 60*5
 tz = 60*23
-l = []
-for i in range(len(a)):
-    if (a[i][0] <= to) or (a[i][1] >= tz):
-        l.append(i)
-l = l[::-1]
-for k in l:
-    a.pop(k)
-w = 0
-i = 0
-t = [-1]*k
-k7 = 0
-for i in range(len(a)):
-    for j in range(k):
-        if t[j] + 10 < a[i][0]:
-            t[j] = a[i][1]
+for i in range(n):
+    n1, n2 = map(int, f.readline().split())
+    n1, n2 = n1, n1+n2
+    if (n1 >= to) and (n2 <= tz):
+        a.append([n1, n2])
+a.sort()
+k7 = w = 0
+for n1, n2 in a:
+    for i in range(k):
+        if t[i] < n1:
+            t[i] = n2 + 11
             w += 1
-            if j == 6:
+            if i == 6:
                 k7 += 1
             break
 print(w, k7)

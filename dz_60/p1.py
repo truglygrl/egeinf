@@ -2,10 +2,6 @@ from functools import *
 @lru_cache(None)
 
 
-
-
-
-
 def f(a, b):
     if (a + b) >= 77:
         return 0
